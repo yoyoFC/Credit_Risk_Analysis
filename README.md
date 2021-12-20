@@ -34,3 +34,8 @@ After execute the different models, here is a table as summary of the result inc
   <p align="center"><img src="https://user-images.githubusercontent.com/88695570/146700385-6f48cace-900e-46fc-9358-6e2409e65cfd.png">
 
 ## Summary
+
+- Based on the result displayed on the table above, AdaBoost obtained the best average result in all the categories in compare with the other models. This model would be the most appropiate for the credit card prediction. 
+- The model with the lowest results in all the categories was "Undersampling". We don't recommend to use this model for the credit risk prediction. 
+- The second model which can be considerable as appropiate for the credit score analysis is the Random Forest. Despite of having the third highest values for specifity (70% still a considerable value to not erroniusly calssify anyone with a good credit score), the results justify the election of this model as a second best technique.
+-Something addtional to keep in midn for the model selection is the cost of misclassifying a person with a "bad" score as "good" score is larger than the cost of missclassifying someone with "good" credit as "bad" credit, thats why precision is important. Considering the f1 (combining precision and recall) as parameter to rank the models, the third option could be the SMOTE. However, I still consider go fot the AdaBoos as our more secure alternative. 
